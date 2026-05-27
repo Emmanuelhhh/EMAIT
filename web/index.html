@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMAIT Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <div style="display:flex;align-items:center;gap:0">
+    <a class="topbar-logo" href="#" onclick="showSection('overview'); return false;">
+      <span>EMAIT</span>Solutions
+    </a>
+  </div>
+  <nav class="topbar-nav" id="topbarNav">
+    <a class="topbar-nav-link" href="#" data-section="quien-soy"
+       onclick="showSection('quien-soy'); return false;">Quien soy</a>
+    <a class="topbar-nav-link" href="#" data-section="servicios"
+       onclick="showSection('servicios'); return false;">Servicios</a>
+    <a class="topbar-nav-link" href="#" data-section="contactos"
+       onclick="showSection('contactos'); return false;">Contactos</a>
+  </nav>
+</header>
+
+<!-- MAIN (sin sidebar) -->
+<main class="main" style="margin-left:0;">
+<!-- ── OVERVIEW ── -->
+<section class="content-section active" id="overview">
+  <p class="breadcrumb"><a href="#" onclick="showSection('overview'); return false;">Inicio</a></p>
+
+  <!-- ══ HERO EMAIT SOLUTIONS ══ -->
+  <div class="emait-hero">
+    <div class="emait-hero-badge">EMAIT Solutions</div>
+    <h1 class="emait-hero-title">Tecnología · Aprendizaje · Crecimiento</h1>
+    <p class="emait-hero-sub">
+      Combinamos desarrollo de software, formación práctica y acompañamiento profesional
+      para ayudar a developers a construir soluciones reales y carreras sólidas.
+    </p>
+    <div class="emait-hero-actions">
+      <button onclick="showSection('servicios'); return false;" class="emait-btn emait-btn-primary">Ver servicios →</button>
+      <button onclick="showSection('contactos'); return false;" class="emait-btn emait-btn-secondary">Contactar</button>
+    </div>
+  </div>
+
+  <!-- ══ 3 PILARES ══ -->
+  <div class="emait-pillars">
+    <div class="emait-pillar">
+      <div class="emait-pillar-icon">🖥️</div>
+      <h3>Tecnología</h3>
+      <p>Desarrollo backend, APIs REST, arquitectura de software y soluciones empresariales.</p>
+    </div>
+    <div class="emait-pillar">
+      <div class="emait-pillar-icon">📚</div>
+      <h3>Aprendizaje</h3>
+      <p>Programas de entrenamiento práctico estructurados para developers en todos los niveles.</p>
+    </div>
+    <div class="emait-pillar">
+      <div class="emait-pillar-icon">📈</div>
+      <h3>Crecimiento</h3>
+      <p>Asesoría, roadmaps y acompañamiento para avanzar con dirección en el mercado tech.</p>
+    </div>
+  </div>
+
+  <!-- ══ LO QUE OFRECEMOS ══ -->
+  <div class="emait-services-section">
+    <h2 class="emait-section-title">Lo que ofrecemos</h2>
+    <div class="emait-services-grid">
+      <div class="emait-service-item">
+        <span class="emait-service-icon">🎯</span>
+        <div>
+          <h4>Entrenamiento técnico a medida</h4>
+          <p>Programas estructurados de Java, SQL y backend adaptados al objetivo y nivel de cada persona.</p>
+        </div>
+      </div>
+      <div class="emait-service-item">
+        <span class="emait-service-icon">📄</span>
+        <div>
+          <h4>Optimización de CV</h4>
+          <p>Revisión y mejora del CV orientada al mercado tech para destacar en procesos de selección.</p>
+        </div>
+      </div>
+      <div class="emait-service-item">
+        <span class="emait-service-icon">🧭</span>
+        <div>
+          <h4>Roadmap personalizado</h4>
+          <p>Plan de estudio claro y concreto basado en tu nivel actual y tus objetivos profesionales.</p>
+        </div>
+      </div>
+      <div class="emait-service-item">
+        <span class="emait-service-icon">💼</span>
+        <div>
+          <h4>Simulación de entrevistas</h4>
+          <p>Práctica realista con retroalimentación sobre Java, SQL, lógica y preguntas profesionales.</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:24px;">
+      <button onclick="showSection('servicios'); return false;" class="emait-btn emait-btn-outline">Ver todos los servicios →</button>
+    </div>
+  </div>
+
+  <!-- ══ TEASER — EJEMPLO DE PROGRAMA ══ -->
+  <div class="emait-example-divider">
+    <span class="emait-example-tag">📂 Ejemplo de programa a medida</span>
+    <h2>Sistema de entrenamiento Java Backend Developer</h2>
+    <p>
+      Un programa intensivo de 12 semanas diseñado para transformar el nivel técnico de un developer
+      y prepararlo para competir en el mercado laboral como Java Backend Developer.
+      Incluye ejercicios diarios de Java, SQL, psicométricos, mock interviews y evaluación final.
+    </p>
+    <div class="emait-example-actions">
+      <button onclick="activarPrograma()" class="emait-btn emait-btn-primary">
+        Ver programa completo →
+      </button>
+      <button onclick="showSection('contactos'); return false;" class="emait-btn emait-btn-secondary" style="background:transparent;border:1.5px solid #1565C0;color:#1565C0;">
+        📩 Quiero el mío personalizado
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- â•â• QUIEN SOY â•â• -->
+<section class="content-section" id="quien-soy">
+  <p class="breadcrumb">
+    <a href="#" onclick="showSection('overview'); return false;">Inicio</a> › Quién soy
+  </p>
+  <h1 class="page-title">Quién soy</h1>
+  <p class="page-subtitle">Developer · Analista de Software · EMAIT Solutions</p>
+
+  <div class="quien-hero">
+    <div class="quien-avatar">
+      <img src="resources/fotoEmm.jpg" alt="Emmanuel" class="quien-avatar-img"/>
+    </div>
+    <div class="quien-hero-body">
+      <h2>Emmanuel — Java Backend Developer</h2>
+      <p>Soy developer y analista de software con experiencia en desarrollo backend, APIs y soluciones empresariales. Durante años he trabajado resolviendo problemas reales, aprendiendo continuamente.</p>
+    </div>
+  </div>
+
+  <div class="rules-block">
+    <h3>Sobre mí</h3>
+    <p>Soy developer y analista de software con experiencia en desarrollo backend, APIs y soluciones empresariales.
+    Durante años he trabajado resolviendo problemas reales, aprendiendo continuamente y entendiendo algo importante:</p>
+    <div class="important-note" style="margin:16px 0;">
+      El crecimiento profesional no depende solamente de aprender tecnologías.<br>
+      Depende de tener <strong>dirección, disciplina y claridad.</strong>
+    </div>
+    <p>Por eso decidí crear un enfoque diferente. Uno más humano, práctico y estructurado para ayudar a otras personas
+    a avanzar profesionalmente dentro del mundo tecnológico.</p>
+    <p>Mi interés no es vender promesas rápidas. Mi objetivo es compartir experiencia, estructura y acompañamiento
+    para ayudar a developers y personas en tecnología a construir mejores oportunidades profesionales.</p>
+  </div>
+
+  <div class="rules-block" style="border-left-color:#7B1FA2;">
+    <h3>Sobre EMAIT Solutions</h3>
+    <p>EMAIT Solutions nace con la idea de combinar tecnología, aprendizaje y crecimiento profesional.
+    Más que una empresa enfocada únicamente en programación, buscamos construir soluciones y servicios
+    que ayuden a las personas a desarrollarse técnica y profesionalmente en el mundo digital.</p>
+    <p>Nuestro enfoque está orientado a:</p>
+    <ul>
+      <li>desarrollo backend</li>
+      <li>APIs y servicios web</li>
+      <li>arquitectura de software</li>
+      <li>asesoría profesional para developers</li>
+      <li>acompañamiento técnico</li>
+      <li>contenido educativo y formación práctica</li>
+    </ul>
+    <p>Creemos que la tecnología no solo debe resolver problemas técnicos. También debe abrir oportunidades,
+    generar crecimiento y ayudar a las personas a construir una vida profesional más sólida.</p>
+  </div>
+
+  <div class="rules-block" style="border-left-color:#1976D2;">
+    <h3>Filosofía</h3>
+    <p>En EMAIT Solutions creemos en:</p>
+    <ul>
+      <li>la disciplina sobre la motivación</li>
+      <li>la constancia sobre el perfeccionismo</li>
+      <li>el crecimiento continuo</li>
+      <li>y el aprendizaje aplicado a la vida real</li>
+    </ul>
+    <div class="important-note" style="margin-top:16px;">
+      Porque el verdadero progreso profesional no ocurre de un día para otro.<br>
+      <strong>Se construye todos los días.</strong>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:32px;">
+    <button class="frase-action-btn frase-action-otra" style="font-size:14px;padding:10px 28px;"
+      onclick="showSection('contactos'); return false;">
+      📩 Contactar →
+    </button>
+  </div>
+</section>
+
+<!-- â•â• SERVICIOS â•â• -->
+<section class="content-section" id="servicios">
+  <p class="breadcrumb">
+    <a href="#" onclick="showSection('overview'); return false;">Inicio</a> › Servicios
+  </p>
+  <h1 class="page-title">Asesoría Profesional para Developers 🚀</h1>
+  <p class="page-subtitle">Claridad, estructura y disciplina para crecer profesionalmente</p>
+
+  <div class="rules-block">
+    <p>No vendo humo. No vendo motivación vacía. Y no se trata solo de aprender tecnologías.<br>
+    Mi objetivo es ayudarte a construir claridad, estructura y disciplina para crecer profesionalmente como developer.</p>
+    <p>Muchos programadores no están atorados por falta de capacidad. Están atorados por:</p>
+    <ul>
+      <li>desorden</li>
+      <li>falta de dirección</li>
+      <li>exceso de información</li>
+      <li>mala preparación para entrevistas</li>
+      <li>y ausencia de un plan real</li>
+    </ul>
+    <p>Por eso comencé a ofrecer asesorías enfocadas en crecimiento profesional y preparación técnica.</p>
+  </div>
+
+  <h2 class="section-h2">Servicios disponibles</h2>
+
+  <div class="service-card">
+    <div class="service-card-header">
+      <span class="service-card-icon">📄</span>
+      <span class="service-card-title">Optimización de CV para Developers</span>
+    </div>
+    <p>Te ayudo a mejorar tu CV para que tenga una presentación más profesional y orientada al mercado tech.</p>
+    <ul>
+      <li>Revisión técnica</li>
+      <li>Estructura profesional</li>
+      <li>Mejoras de redacción</li>
+      <li>Optimización para vacantes reales</li>
+      <li>Recomendaciones personalizadas</li>
+    </ul>
+  </div>
+
+  <div class="service-card">
+    <div class="service-card-header">
+      <span class="service-card-icon">🧭</span>
+      <span class="service-card-title">Roadmap Personalizado</span>
+    </div>
+    <p>Creamos un plan claro basado en tu nivel actual, tus objetivos y el área donde quieres crecer.</p>
+    <ul>
+      <li>Ideal para: backend, Java, APIs, SQL, entrevistas, cambio laboral</li>
+      <li>Sin estudiar tecnologías al azar</li>
+    </ul>
+  </div>
+
+  <div class="service-card">
+    <div class="service-card-header">
+      <span class="service-card-icon">💼</span>
+      <span class="service-card-title">Aplicación Estratégica a Vacantes</span>
+    </div>
+    <p>Muchos developers no saben dónde aplicar, cómo prepararse ni qué vacantes realmente les convienen.</p>
+    <ul>
+      <li>Estrategia de búsqueda</li>
+      <li>Selección de vacantes</li>
+      <li>Preparación previa</li>
+      <li>Orientación profesional</li>
+    </ul>
+  </div>
+
+  <div class="service-card">
+    <div class="service-card-header">
+      <span class="service-card-icon">🎯</span>
+      <span class="service-card-title">Simulación de Entrevista Técnica</span>
+    </div>
+    <p>Práctica realista para entrevistas: Java, SQL, lógica, backend, preguntas técnicas y profesionales.</p>
+    <ul>
+      <li>Retroalimentación clara sobre errores</li>
+      <li>Identificación de áreas débiles</li>
+      <li>Oportunidades de mejora</li>
+    </ul>
+  </div>
+
+  <div class="service-card">
+    <div class="service-card-header">
+      <span class="service-card-icon">📈</span>
+      <span class="service-card-title">Acompañamiento Profesional</span>
+    </div>
+    <p>Seguimiento semanal para ayudarte a mantener constancia, enfoque, disciplina y progreso real.</p>
+    <p>Porque avanzar no depende solo de motivación. Depende de ejecutar consistentemente.</p>
+  </div>
+
+  <div class="rules-block" style="border-left-color:#1976D2;margin-top:32px;">
+    <h3>Enfoque</h3>
+    <p>Mi enfoque NO es solo enseñar teoría. Es ayudarte a:</p>
+    <ul>
+      <li>organizarte</li>
+      <li>desarrollar criterio</li>
+      <li>mejorar profesionalmente</li>
+      <li>prepararte para oportunidades reales</li>
+      <li>y construir hábitos de crecimiento sostenibles</li>
+    </ul>
+  </div>
+
+  <div class="rules-block" style="border-left-color:#2E7D32;">
+    <h3>Ideal para personas que:</h3>
+    <ul style="list-style:none;padding-left:0;">
+      <li>✅ quieren cambiar de trabajo</li>
+      <li>✅ quieren crecer profesionalmente</li>
+      <li>✅ se sienten estancadas</li>
+      <li>✅ no saben qué estudiar primero</li>
+      <li>✅ quieren estructura y dirección</li>
+      <li>✅ buscan mejorar entrevistas técnicas</li>
+    </ul>
+  </div>
+
+  <div class="important-note" style="text-align:center;font-size:16px;font-style:italic;margin:24px 0;">
+    "No necesitas aprender 20 tecnologías. Necesitas claridad, dirección y constancia."
+  </div>
+
+  <div style="text-align:center;margin-top:8px;margin-bottom:32px;">
+    <button class="frase-action-btn frase-action-otra" style="font-size:14px;padding:10px 28px;"
+      onclick="showSection('contactos'); return false;">
+      📩 Agendar asesoría →
+    </button>
+  </div>
+</section>
+
+<!-- â•â• CONTACTOS â•â• -->
+<section class="content-section" id="contactos">
+  <p class="breadcrumb">
+    <a href="#" onclick="showSection('overview'); return false;">Inicio</a> › Contactos
+  </p>
+  <h1 class="page-title">Contactos</h1>
+  <p class="page-subtitle">Elige la forma que más te convenga para escribirme</p>
+
+  <div class="contact-grid">
+
+    <a class="contact-card" href="https://calendly.com/emmanuel-hernandezhh/30min" target="_blank" rel="noopener noreferrer"
+       style="border-top:4px solid #0066CC;">
+      <span class="contact-card-icon">📅</span>
+      <span class="contact-card-title">Calendly</span>
+      <span class="contact-card-desc">Agenda una sesión directamente en mi calendario. Elige el horario que mejor te funcione.</span>
+      <span class="contact-card-cta">Agendar sesión →</span>
+    </a>
+
+    <a class="contact-card" href="https://wa.me/528148791877?text=Hola,%20quiero%20información%20sobre%20las%20asesorías" target="_blank" rel="noopener noreferrer"
+       style="border-top:4px solid #25D366;">
+      <span class="contact-card-icon">💬</span>
+      <span class="contact-card-title">WhatsApp</span>
+      <span class="contact-card-desc">Escríbeme directamente por WhatsApp para cualquier duda o para coordinar una asesoría.</span>
+      <span class="contact-card-cta">Enviar mensaje →</span>
+    </a>
+
+    <a class="contact-card" href="https://www.linkedin.com/in/emmanueldevbackend" target="_blank" rel="noopener noreferrer"
+       style="border-top:4px solid #0A66C2;">
+      <span class="contact-card-icon">💼</span>
+      <span class="contact-card-title">LinkedIn</span>
+      <span class="contact-card-desc">Conéctate conmigo en LinkedIn para seguir mi contenido y actividad profesional.</span>
+      <span class="contact-card-cta">Ver perfil →</span>
+    </a>
+
+  </div>
+
+  <div class="important-note" style="text-align:center;">
+    Si tienes preguntas sobre algún servicio o quieres recibir más información antes de agendar,
+    puedes escribirme por cualquiera de estos canales y te respondo a la brevedad.
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <span class="site-footer-brand">EMAIT Solutions&#x2122;</span>
+    <span class="site-footer-sep">&middot;</span>
+    <span class="site-footer-copy">&copy; 2025 EMAIT Solutions. Todos los derechos reservados.</span>
+  </div>
+</footer>
+
+<!-- MODULOS JS -->
+<script src="js/navigation.js"></script>
+</body>
+</html>

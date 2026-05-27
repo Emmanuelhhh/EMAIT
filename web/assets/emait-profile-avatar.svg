@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Fondo gradiente azul -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0d47a1"/>
+      <stop offset="55%"  stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#1976D2"/>
+    </linearGradient>
+
+    <!-- Círculo decorativo interior -->
+    <radialGradient id="circleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Clip circular -->
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="200"/>
+    </clipPath>
+  </defs>
+
+  <!-- Fondo base -->
+  <circle cx="200" cy="200" r="200" fill="url(#bgGrad)"/>
+
+  <!-- Anillos decorativos sutiles -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.12"/>
+  <circle cx="200" cy="200" r="165" fill="none" stroke="#ffffff" stroke-width="0.4" stroke-opacity="0.08"/>
+
+  <!-- Puntos de grid (patrón tech) -->
+  <g fill="#ffffff" fill-opacity="0.07">
+    <circle cx="60"  cy="60"  r="2.5"/>
+    <circle cx="120" cy="60"  r="2.5"/>
+    <circle cx="280" cy="60"  r="2.5"/>
+    <circle cx="340" cy="60"  r="2.5"/>
+    <circle cx="60"  cy="340" r="2.5"/>
+    <circle cx="120" cy="340" r="2.5"/>
+    <circle cx="280" cy="340" r="2.5"/>
+    <circle cx="340" cy="340" r="2.5"/>
+    <circle cx="60"  cy="200" r="2.5"/>
+    <circle cx="340" cy="200" r="2.5"/>
+  </g>
+
+  <!-- Líneas decorativas esquina sup-izq -->
+  <g stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" fill="none">
+    <line x1="30"  y1="30"  x2="100" y2="30"/>
+    <line x1="30"  y1="30"  x2="30"  y2="100"/>
+    <line x1="370" y1="30"  x2="300" y2="30"/>
+    <line x1="370" y1="30"  x2="370" y2="100"/>
+    <line x1="30"  y1="370" x2="100" y2="370"/>
+    <line x1="30"  y1="370" x2="30"  y2="300"/>
+    <line x1="370" y1="370" x2="300" y2="370"/>
+    <line x1="370" y1="370" x2="370" y2="300"/>
+  </g>
+
+  <!-- Badge amarillo "EMAIT" -->
+  <rect x="148" y="100" width="104" height="36" rx="8" fill="#FFC107"/>
+  <text x="200" y="124" font-family="'Segoe UI', Arial, sans-serif" font-size="18"
+        font-weight="800" fill="#0d47a1" text-anchor="middle" letter-spacing="2">EMAIT</text>
+
+  <!-- Texto principal "Solutions" -->
+  <text x="200" y="174" font-family="'Segoe UI', Arial, sans-serif" font-size="36"
+        font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">Solutions</text>
+
+  <!-- Línea divisoria -->
+  <line x1="100" y1="192" x2="300" y2="192" stroke="#ffffff" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- Tagline -->
+  <text x="200" y="222" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
+        font-weight="400" fill="#ffffff" fill-opacity="0.85" text-anchor="middle" letter-spacing="0.5">
+    Tecnolog&#xED;a · Aprendizaje · Crecimiento
+  </text>
+
+  <!-- Íconos de servicios (texto) -->
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#ffffff" fill-opacity="0.7" text-anchor="middle">
+    <text x="110" y="272">&#x1F5A5;&#xFE0F; Backend</text>
+    <text x="200" y="272">&#x1F4DA; Aprendizaje</text>
+    <text x="290" y="272">&#x1F4C8; Crecimiento</text>
+  </g>
+
+  <!-- Puntos separadores entre servicios -->
+  <g fill="#FFC107" fill-opacity="0.6">
+    <circle cx="155" cy="269" r="2"/>
+    <circle cx="245" cy="269" r="2"/>
+  </g>
+
+  <!-- Dominio / URL -->
+  <text x="200" y="320" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
+        font-weight="500" fill="#ffffff" fill-opacity="0.55" text-anchor="middle" letter-spacing="0.8">
+    emait-solutions.dev
+  </text>
+
+  <!-- Anillo exterior decorativo (amarillo) -->
+  <circle cx="200" cy="200" r="198" fill="none" stroke="#FFC107" stroke-width="3" stroke-opacity="0.25"/>
+</svg>

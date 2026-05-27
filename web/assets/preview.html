@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>EMAIT Solutions — Diseños</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:#1a1a2e; font-family:'Segoe UI',Arial,sans-serif; padding:40px 24px; color:#fff; }
+    h1  { font-size:22px; font-weight:700; margin-bottom:6px; color:#FFC107; }
+    p   { font-size:13px; color:rgba(255,255,255,.55); margin-bottom:36px; }
+    .section { margin-bottom:52px; }
+    .label  { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1.2px;
+               color:rgba(255,255,255,.4); margin-bottom:14px; }
+    .card   { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+               border-radius:16px; padding:28px; display:inline-block; }
+    .hint   { font-size:12px; color:rgba(255,255,255,.35); margin-top:14px; }
+
+    /* Avatar centrado */
+    .avatar-wrap { display:flex; justify-content:center; }
+    .avatar-wrap img { border-radius:50%; width:300px; height:300px;
+                        box-shadow:0 12px 40px rgba(0,0,0,.5); }
+
+    /* Banner full-width */
+    .banner-wrap img { width:100%; max-width:1100px; border-radius:12px;
+                        box-shadow:0 12px 40px rgba(0,0,0,.5); display:block; }
+
+    .dl-btns { display:flex; gap:12px; margin-top:20px; flex-wrap:wrap; }
+    a.dl-btn { display:inline-block; padding:9px 22px; border-radius:8px; font-size:13px;
+               font-weight:700; text-decoration:none; transition:.2s; }
+    a.dl-btn.primary  { background:#FFC107; color:#0d47a1; }
+    a.dl-btn.primary:hover  { background:#FFD54F; }
+    a.dl-btn.outline  { border:1.5px solid rgba(255,255,255,.35); color:#fff; }
+    a.dl-btn.outline:hover  { background:rgba(255,255,255,.1); }
+  </style>
+</head>
+<body>
+  <h1>EMAIT Solutions — Diseños de Perfil</h1>
+  <p>Haz clic derecho sobre la imagen → "Guardar imagen como" para exportar · También puedes abrir el .svg directamente</p>
+
+  <!-- AVATAR -->
+  <div class="section">
+    <div class="label">📷 Avatar · Perfil (400 × 400 px) — LinkedIn, WhatsApp, GitHub</div>
+    <div class="card">
+      <div class="avatar-wrap">
+        <img src="emait-profile-avatar.svg" alt="EMAIT Solutions Avatar"/>
+      </div>
+      <div class="hint">Ideal para foto de perfil — formato cuadrado · se muestra circular en LinkedIn</div>
+      <div class="dl-btns">
+        <a class="dl-btn primary" href="emait-profile-avatar.svg" download>⬇ Descargar Avatar SVG</a>
+        <a class="dl-btn outline" href="emait-profile-avatar.svg" target="_blank">🔍 Ver en pantalla completa</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BANNER -->
+  <div class="section">
+    <div class="label">🖼️ Banner / Portada (1584 × 396 px) — LinkedIn Company Page, Twitter/X</div>
+    <div class="card" style="display:block; max-width:1100px;">
+      <div class="banner-wrap">
+        <img src="emait-banner.svg" alt="EMAIT Solutions Banner"/>
+      </div>
+      <div class="hint">Tamaño estándar LinkedIn Banner · También sirve para portada de Twitter/X y encabezado de email</div>
+      <div class="dl-btns">
+        <a class="dl-btn primary" href="emait-banner.svg" download>⬇ Descargar Banner SVG</a>
+        <a class="dl-btn outline" href="emait-banner.svg" target="_blank">🔍 Ver en pantalla completa</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFO CONVERSIÓN -->
+  <div style="background:rgba(255,193,7,.08); border:1px solid rgba(255,193,7,.25);
+              border-radius:12px; padding:22px 26px; max-width:680px; margin-top:8px;">
+    <div style="font-size:13px; font-weight:700; color:#FFC107; margin-bottom:10px;">
+      💡 Para convertir SVG → PNG (mayor compatibilidad)
+    </div>
+    <div style="font-size:13px; color:rgba(255,255,255,.7); line-height:1.8;">
+      1. Abre el archivo <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px;">.svg</code>
+         en el navegador<br>
+      2. Clic derecho → <strong>Guardar imagen como…</strong><br>
+      3. O usa <a href="https://svgtopng.com" target="_blank" style="color:#FFC107;">svgtopng.com</a>
+         para convertirlo online (gratis)<br>
+      4. Para LinkedIn: avatar mín. <strong>400×400 px</strong> · banner mín. <strong>1128×191 px</strong>
+    </div>
+  </div>
+</body>
+</html>

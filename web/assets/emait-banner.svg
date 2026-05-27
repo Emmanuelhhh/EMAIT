@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396">
+  <defs>
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0d47a1"/>
+      <stop offset="60%"  stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#0d47a1"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#FFC107" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#FFC107" stop-opacity="1"/>
+      <stop offset="70%"  stop-color="#FFC107" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFC107" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1584" height="396" fill="url(#bannerBg)"/>
+
+  <!-- Patrón de puntos tech (fondo) -->
+  <g fill="#ffffff" fill-opacity="0.04">
+    <circle cx="50"   cy="50"  r="3"/> <circle cx="150"  cy="50"  r="3"/> <circle cx="250"  cy="50"  r="3"/>
+    <circle cx="350"  cy="50"  r="3"/> <circle cx="450"  cy="50"  r="3"/> <circle cx="550"  cy="50"  r="3"/>
+    <circle cx="650"  cy="50"  r="3"/> <circle cx="750"  cy="50"  r="3"/> <circle cx="850"  cy="50"  r="3"/>
+    <circle cx="950"  cy="50"  r="3"/> <circle cx="1050" cy="50"  r="3"/> <circle cx="1150" cy="50"  r="3"/>
+    <circle cx="1250" cy="50"  r="3"/> <circle cx="1350" cy="50"  r="3"/> <circle cx="1450" cy="50"  r="3"/>
+    <circle cx="1550" cy="50"  r="3"/>
+    <circle cx="50"   cy="150" r="3"/> <circle cx="150"  cy="150" r="3"/> <circle cx="1450" cy="150" r="3"/> <circle cx="1550" cy="150" r="3"/>
+    <circle cx="50"   cy="250" r="3"/> <circle cx="150"  cy="250" r="3"/> <circle cx="1450" cy="250" r="3"/> <circle cx="1550" cy="250" r="3"/>
+    <circle cx="50"   cy="350" r="3"/> <circle cx="150"  cy="350" r="3"/> <circle cx="250"  cy="350" r="3"/>
+    <circle cx="350"  cy="350" r="3"/> <circle cx="450"  cy="350" r="3"/> <circle cx="550"  cy="350" r="3"/>
+    <circle cx="650"  cy="350" r="3"/> <circle cx="750"  cy="350" r="3"/> <circle cx="850"  cy="350" r="3"/>
+    <circle cx="950"  cy="350" r="3"/> <circle cx="1050" cy="350" r="3"/> <circle cx="1150" cy="350" r="3"/>
+    <circle cx="1250" cy="350" r="3"/> <circle cx="1350" cy="350" r="3"/> <circle cx="1450" cy="350" r="3"/>
+    <circle cx="1550" cy="350" r="3"/>
+  </g>
+
+  <!-- Líneas de código decorativas (lado derecho) -->
+  <g font-family="'Courier New', monospace" font-size="13" fill="#ffffff" fill-opacity="0.07" text-anchor="start">
+    <text x="1100" y="80">public class EMATISolutions &#x7B;</text>
+    <text x="1120" y="102">  String mision = "Tecnolog&#xED;a + Crecimiento";</text>
+    <text x="1120" y="124">  List&#x3C;String&#x3E; servicios = new ArrayList&#x3C;&#x3E;();</text>
+    <text x="1120" y="146">  void asesorar(Developer dev) &#x7B;</text>
+    <text x="1140" y="168">    dev.crecer();</text>
+    <text x="1140" y="190">    dev.conseguirEmpleo();</text>
+    <text x="1120" y="212">  &#x7D;</text>
+    <text x="1100" y="234">&#x7D;</text>
+  </g>
+
+  <!-- Semicírculo decorativo derecha -->
+  <circle cx="1450" cy="198" r="280" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.06"/>
+  <circle cx="1450" cy="198" r="220" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.04"/>
+
+  <!-- Línea amarilla divisoria -->
+  <rect x="0" y="0" width="6" height="396" fill="#FFC107" opacity="0.7"/>
+  <rect x="0" y="185" width="1584" height="2" fill="url(#accentLine)" opacity="0.35"/>
+
+  <!-- ── LADO IZQUIERDO — Logo + Tagline ── -->
+
+  <!-- Badge EMAIT -->
+  <rect x="72" y="80" width="130" height="44" rx="10" fill="#FFC107"/>
+  <text x="137" y="110" font-family="'Segoe UI', Arial, sans-serif" font-size="24"
+        font-weight="900" fill="#0d47a1" text-anchor="middle" letter-spacing="3">EMAIT</text>
+
+  <!-- Solutions -->
+  <text x="72" y="178" font-family="'Segoe UI', Arial, sans-serif" font-size="62"
+        font-weight="800" fill="#ffffff" letter-spacing="0">Solutions</text>
+
+  <!-- Tagline -->
+  <text x="72" y="218" font-family="'Segoe UI', Arial, sans-serif" font-size="18"
+        font-weight="400" fill="#ffffff" fill-opacity="0.82" letter-spacing="0.5">
+    Tecnolog&#xED;a · Aprendizaje · Crecimiento
+  </text>
+
+  <!-- Línea vertical separadora izq -->
+  <line x1="72" y1="238" x2="480" y2="238" stroke="#FFC107" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Descripción -->
+  <text x="72" y="266" font-family="'Segoe UI', Arial, sans-serif" font-size="14"
+        font-weight="400" fill="#ffffff" fill-opacity="0.65" letter-spacing="0.3">
+    Desarrollo backend · Asesor&#xED;a profesional · Formaci&#xF3;n t&#xE9;cnica a medida
+  </text>
+
+  <!-- ── SECCIÓN CENTRAL — 3 Servicios ── -->
+  <!-- Card 1 -->
+  <rect x="520" y="100" width="155" height="190" rx="14" fill="url(#cardGrad)" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.18"/>
+  <text x="597" y="153" font-family="'Segoe UI', Arial, sans-serif" font-size="30" text-anchor="middle">&#x1F5A5;&#xFE0F;</text>
+  <text x="597" y="190" font-family="'Segoe UI', Arial, sans-serif" font-size="15"
+        font-weight="700" fill="#ffffff" text-anchor="middle">Tecnolog&#xED;a</text>
+  <text x="597" y="210" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+        fill="#ffffff" fill-opacity="0.65" text-anchor="middle">Backend · APIs</text>
+  <text x="597" y="226" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+        fill="#ffffff" fill-opacity="0.65" text-anchor="middle">Arquitectura</text>
+  <line x1="545" y1="245" x2="649" y2="245" stroke="#FFC107" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Card 2 -->
+  <rect x="692" y="100" width="155" height="190" rx="14" fill="url(#cardGrad)" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.18"/>
+  <text x="769" y="153" font-family="'Segoe UI', Arial, sans-serif" font-size="30" text-anchor="middle">&#x1F4DA;</text>
+  <text x="769" y="190" font-family="'Segoe UI', Arial, sans-serif" font-size="15"
+        font-weight="700" fill="#ffffff" text-anchor="middle">Aprendizaje</text>
+  <text x="769" y="210" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+        fill="#ffffff" fill-opacity="0.65" text-anchor="middle">Java · SQL</text>
+  <text x="769" y="226" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+        fill="#ffffff" fill-opacity="0.65" text-anchor="middle">Entrenamiento</text>
+  <line x1="717" y1="245" x2="821" y2="245" stroke="#FFC107" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Card 3 -->
+  <rect x="864" y="100" width="155" height="190" rx="14" fill="url(#cardGrad)" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.18"/>
+  <text x="941" y="153" font-family="'Segoe UI', Arial, sans-serif" font-size="30" text-anchor="middle">&#x1F4C8;</text>
+  <text x="941" y="190" font-family="'Segoe UI', Arial, sans-serif" font-size="15"
+        font-weight="700" fill="#ffffff" text-anchor="middle">Crecimiento</text>
+  <text x="941" y="210" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+        fill="#ffffff" fill-opacity="0.65" text-anchor="middle">Asesor&#xED;a</text>
+  <text x="941" y="226" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+        fill="#ffffff" fill-opacity="0.65" text-anchor="middle">Roadmap · CV</text>
+  <line x1="889" y1="245" x2="993" y2="245" stroke="#FFC107" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- LinkedIn badge (pie) -->
+  <text x="72" y="330" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
+        fill="#ffffff" fill-opacity="0.5" letter-spacing="0.5">
+    linkedin.com/in/emmanueldevbackend
+  </text>
+
+  <!-- Año / Versión -->
+  <text x="1512" y="375" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+        fill="#ffffff" fill-opacity="0.3" text-anchor="end">2025</text>
+</svg>
