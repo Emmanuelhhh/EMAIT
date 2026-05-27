@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "PowerShell(New-Item -ItemType File -Path \"C:\\\\Users\\\\emele\\\\Documents\\\\PRODUCTO ACTIVO DIGITAL\\\\Semana11_Java_Backend.md\" -Force)",
+      "Bash(awk 'NR>=12966 && NR<=13270 && /\\(<\\\\/div>|<\\\\/section>|ORPHAN_REMOVE\\)/' \"C:/Users/emele/Documents/PRODUCTO ACTIVO DIGITAL/web/index.html\")",
+      "Bash(awk 'NR>=12966 && NR<=13270 && /\\(<\\\\/div>|<\\\\/section>|ORPHAN_REMOVE\\)/ {print NR\": \"$0}' \"C:/Users/emele/Documents/PRODUCTO ACTIVO DIGITAL/web/index.html\")",
+      "Bash(awk 'NR>=12967 && NR<=13270' \"C:/Users/emele/Documents/PRODUCTO ACTIVO DIGITAL/web/index.html\")",
+      "Bash(awk 'NR>=12967 && NR<=14200' \"C:/Users/emele/Documents/PRODUCTO ACTIVO DIGITAL/web/index.html\")",
+      "Bash(awk 'NR>=12960 && NR<=13470' \"C:/Users/emele/Documents/PRODUCTO ACTIVO DIGITAL/web/index.html\")",
+      "Bash(awk ' *)",
+      "Bash(awk 'NR>=12960' \"C:/Users/emele/Documents/PRODUCTO ACTIVO DIGITAL/web/index.html\")",
+      "Bash(awk 'NR>=13612 && NR<=13757' \"C:/Users/emele/Documents/PRODUCTO ACTIVO DIGITAL/web/index.html\")",
+      "Bash(awk 'NR>=13612 && NR<=13770' \"C:/Users/emele/Documents/PRODUCTO ACTIVO DIGITAL/web/index.html\")",
+      "Bash(awk 'NR>=13837 && NR<=13991' \"C:/Users/emele/Documents/PRODUCTO ACTIVO DIGITAL/web/index.html\")",
+      "Bash(awk 'NR>=14054 && NR<=14190' \"C:/Users/emele/Documents/PRODUCTO ACTIVO DIGITAL/web/index.html\")",
+      "Bash(awk 'NR>=355 && NR<=380')",
+      "Bash(awk -F: '$1>=13600')",
+      "Bash(awk 'NR>=253 && NR<=310' \"C:/Users/emele/Documents/PRODUCTO ACTIVO DIGITAL/web/index.html\")",
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\emele\\\\Documents\\\\PRODUCTO ACTIVO DIGITAL\\\\web\\\\style.css\" -Encoding UTF8\\).Count)"
+    ]
+  }
+}
