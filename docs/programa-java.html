@@ -25,6 +25,10 @@
     </div>
   </div>
   <a href="index.html" class="topbar-back-link">&larr; EMAIT Solutions</a>
+  <button class="timer-btn" id="timerBtn" onclick="timerClick()" title="Temporizador de estudio · cada clic +5 min" aria-label="Temporizador">
+    <span class="timer-btn-icon">&#x23F1;&#xFE0F;</span>
+    <span class="timer-btn-label" id="timerLabel">5:00</span>
+  </button>
   <button class="frase-btn" onclick="abrirFrase()" title="Frase aleatoria" aria-label="Frase">
     <span class="frase-btn-icon">&#x1F4AC;</span>
     <span class="frase-btn-label">Frase</span>
@@ -14498,6 +14502,7 @@ Map&lt;String, Double&gt; promedioPorDepto = empleados.stream()
 </div>
 
 <!-- â•â• MÃ“DULOS JS â•â• -->
+<script src="js/timer.js"></script>
 <script src="js/data.js"></script>
 <script src="js/frases.js"></script>
 <script src="js/navigation.js"></script>
@@ -14506,3 +14511,4 @@ Map&lt;String, Double&gt; promedioPorDepto = empleados.stream()
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>
+

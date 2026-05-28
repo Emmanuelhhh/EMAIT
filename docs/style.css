@@ -1017,6 +1017,50 @@ code:not([class*="language-"]) {
 .frase-btn:active { transform: translateY(0); }
 .frase-btn-icon { font-size: 16px; line-height: 1; }
 
+/* ── BOTÓN TEMPORIZADOR ── */
+.timer-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.30);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .4px;
+  transition: background .2s, border-color .2s, transform .15s;
+  white-space: nowrap;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.timer-btn:hover {
+  background: rgba(255,255,255,0.24);
+  border-color: rgba(255,255,255,0.55);
+  transform: translateY(-1px);
+}
+.timer-btn:active { transform: translateY(0); }
+.timer-btn-icon { font-size: 15px; line-height: 1; }
+.timer-btn-label { font-variant-numeric: tabular-nums; min-width: 32px; }
+
+/* Estado activo — verde sutil */
+.timer-btn.timer-running {
+  background: rgba(76,175,80,0.25);
+  border-color: rgba(76,175,80,0.6);
+  color: #A5D6A7;
+}
+.timer-btn.timer-running:hover {
+  background: rgba(76,175,80,0.38);
+}
+
+/* Estado listo */
+.timer-btn.timer-done {
+  background: rgba(76,175,80,0.45);
+  border-color: #81C784;
+  color: #fff;
+}
+
 /* ══════════════════════════════════════════════
    MODAL FRASE
 ══════════════════════════════════════════════ */
